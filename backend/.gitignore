@@ -1,0 +1,19 @@
+# .NET Core
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.nupkg
+*.pdb
+*.dll
+*.exe
+
+# Local database
+*.db
+*.mdf
+*.ldf
+
+# Logs
+*.log
