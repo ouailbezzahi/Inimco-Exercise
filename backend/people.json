@@ -1,0 +1,37 @@
+[
+  {
+    "FirstName": null,
+    "LastName": null,
+    "SocialSkills": null,
+    "SocialAccounts": null
+  },
+  {
+    "FirstName": "Ouail",
+    "LastName": "Bezzahi",
+    "SocialSkills": [
+      "introvert",
+      "extravert"
+    ],
+    "SocialAccounts": [
+      {
+        "Type": "LinkedIn",
+        "Address": "ouailbezzahi"
+      }
+    ]
+  },
+  {
+    "FirstName": "Chahid",
+    "LastName": "Bezzahi",
+    "SocialSkills": [
+      "voetbal",
+      "basketball",
+      "leergierig"
+    ],
+    "SocialAccounts": [
+      {
+        "Type": "Facebook",
+        "Address": "Chahid Bezzahi"
+      }
+    ]
+  }
+]

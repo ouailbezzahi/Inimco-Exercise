@@ -1,0 +1,30 @@
+[
+  {
+    "FirstName": "Aya",
+    "LastName": "Bezzahi",
+    "SocialSkills": [
+      "introvert",
+      "extravert"
+    ],
+    "SocialAccounts": [
+      {
+        "Type": "LinkedIn",
+        "Address": "ouailbezzahi"
+      }
+    ]
+  },
+  {
+    "FirstName": "Said",
+    "LastName": "Bezzahi",
+    "SocialSkills": [
+      "introvert",
+      "extravert"
+    ],
+    "SocialAccounts": [
+      {
+        "Type": "LinkedIn",
+        "Address": "ouailbezzahi"
+      }
+    ]
+  }
+]

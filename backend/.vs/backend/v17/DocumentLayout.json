@@ -1,7 +1,24 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Gebruiker\\Documents\\AP - Toegepaste Informatica\\3ITSOF1 - 2025 - 2026\\Bachelorproef \u0026 Stage\\Inimco\\Inimco-Exercise\\backend\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B0F8DD58-E58B-4720-B2A8-D80E8750424C}|backend.csproj|c:\\users\\gebruiker\\documents\\ap - toegepaste informatica\\3itsof1 - 2025 - 2026\\bachelorproef \u0026 stage\\inimco\\inimco-exercise\\backend\\repository\\filerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0F8DD58-E58B-4720-B2A8-D80E8750424C}|backend.csproj|solutionrelative:repository\\filerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0F8DD58-E58B-4720-B2A8-D80E8750424C}|backend.csproj|c:\\users\\gebruiker\\documents\\ap - toegepaste informatica\\3itsof1 - 2025 - 2026\\bachelorproef \u0026 stage\\inimco\\inimco-exercise\\backend\\models\\personanalysis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0F8DD58-E58B-4720-B2A8-D80E8750424C}|backend.csproj|solutionrelative:models\\personanalysis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0F8DD58-E58B-4720-B2A8-D80E8750424C}|backend.csproj|c:\\users\\gebruiker\\documents\\ap - toegepaste informatica\\3itsof1 - 2025 - 2026\\bachelorproef \u0026 stage\\inimco\\inimco-exercise\\backend\\models\\socialaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0F8DD58-E58B-4720-B2A8-D80E8750424C}|backend.csproj|solutionrelative:models\\socialaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0F8DD58-E58B-4720-B2A8-D80E8750424C}|backend.csproj|c:\\users\\gebruiker\\documents\\ap - toegepaste informatica\\3itsof1 - 2025 - 2026\\bachelorproef \u0026 stage\\inimco\\inimco-exercise\\backend\\services\\personservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0F8DD58-E58B-4720-B2A8-D80E8750424C}|backend.csproj|solutionrelative:services\\personservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,12 +26,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 307,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 17,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -70,6 +83,58 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PersonAnalysis.cs",
+              "DocumentMoniker": "C:\\Users\\Gebruiker\\Documents\\AP - Toegepaste Informatica\\3ITSOF1 - 2025 - 2026\\Bachelorproef \u0026 Stage\\Inimco\\Inimco-Exercise\\backend\\Models\\PersonAnalysis.cs",
+              "RelativeDocumentMoniker": "Models\\PersonAnalysis.cs",
+              "ToolTip": "C:\\Users\\Gebruiker\\Documents\\AP - Toegepaste Informatica\\3ITSOF1 - 2025 - 2026\\Bachelorproef \u0026 Stage\\Inimco\\Inimco-Exercise\\backend\\Models\\PersonAnalysis.cs",
+              "RelativeToolTip": "Models\\PersonAnalysis.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T17:58:53.916Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PersonService.cs",
+              "DocumentMoniker": "C:\\Users\\Gebruiker\\Documents\\AP - Toegepaste Informatica\\3ITSOF1 - 2025 - 2026\\Bachelorproef \u0026 Stage\\Inimco\\Inimco-Exercise\\backend\\Services\\PersonService.cs",
+              "RelativeDocumentMoniker": "Services\\PersonService.cs",
+              "ToolTip": "C:\\Users\\Gebruiker\\Documents\\AP - Toegepaste Informatica\\3ITSOF1 - 2025 - 2026\\Bachelorproef \u0026 Stage\\Inimco\\Inimco-Exercise\\backend\\Services\\PersonService.cs",
+              "RelativeToolTip": "Services\\PersonService.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAA1wCIAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T17:45:49.615Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SocialAccount.cs",
+              "DocumentMoniker": "C:\\Users\\Gebruiker\\Documents\\AP - Toegepaste Informatica\\3ITSOF1 - 2025 - 2026\\Bachelorproef \u0026 Stage\\Inimco\\Inimco-Exercise\\backend\\Models\\SocialAccount.cs",
+              "RelativeDocumentMoniker": "Models\\SocialAccount.cs",
+              "ToolTip": "C:\\Users\\Gebruiker\\Documents\\AP - Toegepaste Informatica\\3ITSOF1 - 2025 - 2026\\Bachelorproef \u0026 Stage\\Inimco\\Inimco-Exercise\\backend\\Models\\SocialAccount.cs",
+              "RelativeToolTip": "Models\\SocialAccount.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T17:44:51.565Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FileRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Gebruiker\\Documents\\AP - Toegepaste Informatica\\3ITSOF1 - 2025 - 2026\\Bachelorproef \u0026 Stage\\Inimco\\Inimco-Exercise\\backend\\Repository\\FileRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\FileRepository.cs",
+              "ToolTip": "C:\\Users\\Gebruiker\\Documents\\AP - Toegepaste Informatica\\3ITSOF1 - 2025 - 2026\\Bachelorproef \u0026 Stage\\Inimco\\Inimco-Exercise\\backend\\Repository\\FileRepository.cs",
+              "RelativeToolTip": "Repository\\FileRepository.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAowCQAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T17:35:33.571Z",
+              "EditorCaption": ""
             }
           ]
         },
