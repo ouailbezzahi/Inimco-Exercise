@@ -20,6 +20,16 @@ namespace backend
             builder.Services.AddScoped<IPersonService, PersonService>();
             builder.Services.AddScoped<IFileRepository, FileRepository>();
 
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAngular", policy =>
+                {
+                    policy.WithOrigins("http://localhost:4200")
+                          .AllowAnyHeader()
+                          .AllowAnyMethod();
+                });
+            });
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -28,6 +38,8 @@ namespace backend
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
+
+            app.UseCors("AllowAngular");
 
             app.UseHttpsRedirection();
 

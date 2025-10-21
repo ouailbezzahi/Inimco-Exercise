@@ -1,0 +1,101 @@
+<div class="container">
+  <h2>Person Analysis</h2>
+
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="firstName">First Name:</label>
+      <input
+        id="firstName"
+        type="text"
+        [(ngModel)]="person.firstName"
+        name="firstName"
+        required
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="lastName">Last Name:</label>
+      <input
+        id="lastName"
+        type="text"
+        [(ngModel)]="person.lastName"
+        name="lastName"
+        required
+      />
+    </div>
+
+    <div class="form-group">
+      <label>Social Skills:</label>
+
+      @for (skill of person.socialSkills; track $index; let i = $index) {
+      <div>
+        <input
+          type="text"
+          [(ngModel)]="person.socialSkills[i]"
+          [name]="'skill' + i"
+        />
+        <button type="button" (click)="removeSocialSkill(i)">Remove</button>
+      </div>
+      } @empty {
+      <p>No social skills added.</p>
+      }
+
+      <button type="button" (click)="addSocialSkill()">Add Social Skill</button>
+    </div>
+
+    <div class="form-group">
+      <label>Social Accounts:</label>
+
+      @for (account of person.socialAccounts; track $index; let i = $index) {
+      <div>
+        <input
+          type="text"
+          [(ngModel)]="account.type"
+          [name]="'accountType' + i"
+          placeholder="Type (e.g., Twitter)"
+        />
+        <input
+          type="text"
+          [(ngModel)]="account.address"
+          [name]="'accountAddress' + i"
+          placeholder="Address"
+        />
+        <button type="button" (click)="removeSocialAccount(i)">Remove</button>
+      </div>
+      } @empty {
+      <p>No social accounts added.</p>
+      }
+
+      <button type="button" (click)="addSocialAccount()">
+        Add Social Account
+      </button>
+    </div>
+
+    <button type="submit">Analyze</button>
+  </form>
+
+  @if (errorMessage) {
+  <div class="error">
+    {{ errorMessage }}
+  </div>
+  } @if (analysis) {
+  <div class="results">
+    <h3>Analysis Results:</h3>
+    <p><strong>The number of VOWELS:</strong> {{ analysis.vowelsCount }}</p>
+    <p>
+      <strong>The number of CONSONANTS:</strong> {{ analysis.consonantsCount }}
+    </p>
+    <p>
+      <strong>The firstname + last name entered:</strong>
+      {{ analysis.fullName }}
+    </p>
+    <p>
+      <strong>The reverse version of the firstname and lastname:</strong>
+      {{ analysis.reversedFullName }}
+    </p>
+
+    <h4>The JSON format of the entire object:</h4>
+    <pre>{{ analysis.jsonFormat }}</pre>
+  </div>
+  }
+</div>
