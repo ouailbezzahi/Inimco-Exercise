@@ -8,7 +8,7 @@ import { IPerson, IPersonAnalysis } from '../../../types';
 })
 export class PersonService {
 
-  private apiUrl = 'https://localhost:7068/api/person';
+  private apiUrl = '/api/person';
 
   constructor(private http: HttpClient) { }
 

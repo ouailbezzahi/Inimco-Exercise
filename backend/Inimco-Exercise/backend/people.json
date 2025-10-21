@@ -26,5 +26,32 @@
         "Address": "ouailbezzahi"
       }
     ]
+  },
+  {
+    "FirstName": "Ouail",
+    "LastName": "Tnawieeeeeeeeee",
+    "SocialSkills": [
+      "koken"
+    ],
+    "SocialAccounts": [
+      {
+        "Type": "Twitter",
+        "Address": "ouailbezzahi"
+      }
+    ]
+  },
+  {
+    "FirstName": "Ouail",
+    "LastName": "Bezzahi",
+    "SocialSkills": [
+      "tn",
+      "tntn"
+    ],
+    "SocialAccounts": [
+      {
+        "Type": "tn",
+        "Address": "tntn"
+      }
+    ]
   }
 ]

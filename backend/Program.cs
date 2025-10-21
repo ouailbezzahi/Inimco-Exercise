@@ -22,11 +22,11 @@ namespace backend
 
             builder.Services.AddCors(options =>
             {
-                options.AddPolicy("AllowAngular", policy =>
+                options.AddPolicy("AllowAll", policy =>
                 {
-                    policy.WithOrigins("http://localhost:4200")
-                          .AllowAnyHeader()
-                          .AllowAnyMethod();
+                    policy.AllowAnyOrigin()
+                        .AllowAnyHeader()
+                        .AllowAnyMethod();
                 });
             });
 
@@ -39,7 +39,7 @@ namespace backend
                 app.UseSwaggerUI();
             }
 
-            app.UseCors("AllowAngular");
+            app.UseCors("AllowAll");
 
             app.UseHttpsRedirection();
 
