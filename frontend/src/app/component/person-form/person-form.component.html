@@ -1,101 +1,142 @@
 <div class="container">
   <h2>Person Analysis</h2>
 
-  <form (ngSubmit)="onSubmit()">
+  <form #f="ngForm" (ngSubmit)="onSubmit()" novalidate>
     <div class="form-group">
-      <label for="firstName">First Name:</label>
+      <label for="firstName">First Name</label>
       <input
         id="firstName"
         type="text"
-        [(ngModel)]="person.firstName"
         name="firstName"
+        [(ngModel)]="person.firstName"
+        #firstName="ngModel"
         required
+        [class.invalid]="firstName.invalid && firstName.touched"
+        [attr.aria-invalid]="firstName.invalid ? 'true' : 'false'"
       />
+      @if (firstName.invalid && firstName.touched) {
+      <div class="hint error">First name is required.</div>
+      }
     </div>
 
     <div class="form-group">
-      <label for="lastName">Last Name:</label>
+      <label for="lastName">Last Name</label>
       <input
         id="lastName"
         type="text"
-        [(ngModel)]="person.lastName"
         name="lastName"
+        [(ngModel)]="person.lastName"
+        #lastName="ngModel"
         required
+        [class.invalid]="lastName.invalid && lastName.touched"
+        [attr.aria-invalid]="lastName.invalid ? 'true' : 'false'"
       />
+      @if (lastName.invalid && lastName.touched) {
+      <div class="hint error">Last name is required.</div>
+      }
     </div>
 
     <div class="form-group">
-      <label>Social Skills:</label>
+      <label>Social Skills</label>
 
       @for (skill of person.socialSkills; track $index; let i = $index) {
-      <div>
+      <div class="row">
         <input
           type="text"
           [(ngModel)]="person.socialSkills[i]"
           [name]="'skill' + i"
+          placeholder="Add a skill"
         />
-        <button type="button" (click)="removeSocialSkill(i)">Remove</button>
+        <button
+          type="button"
+          class="btn btn-danger"
+          (click)="removeSocialSkill(i)"
+        >
+          Remove
+        </button>
       </div>
       } @empty {
-      <p>No social skills added.</p>
+      <p class="muted">No social skills added.</p>
       }
 
-      <button type="button" (click)="addSocialSkill()">Add Social Skill</button>
+      <button
+        type="button"
+        class="btn btn-secondary"
+        (click)="addSocialSkill()"
+      >
+        Add Social Skill
+      </button>
     </div>
 
     <div class="form-group">
-      <label>Social Accounts:</label>
+      <label>Social Accounts</label>
 
       @for (account of person.socialAccounts; track $index; let i = $index) {
-      <div>
+      <div class="grid two">
         <input
           type="text"
           [(ngModel)]="account.type"
           [name]="'accountType' + i"
           placeholder="Type (e.g., Twitter)"
         />
-        <input
-          type="text"
-          [(ngModel)]="account.address"
-          [name]="'accountAddress' + i"
-          placeholder="Address"
-        />
-        <button type="button" (click)="removeSocialAccount(i)">Remove</button>
+        <div class="end">
+          <input
+            type="text"
+            [(ngModel)]="account.address"
+            [name]="'accountAddress' + i"
+            placeholder="Address"
+          />
+          <button
+            type="button"
+            class="btn btn-danger"
+            (click)="removeSocialAccount(i)"
+          >
+            Remove
+          </button>
+        </div>
       </div>
       } @empty {
-      <p>No social accounts added.</p>
+      <p class="muted">No social accounts added.</p>
       }
 
-      <button type="button" (click)="addSocialAccount()">
+      <button
+        type="button"
+        class="btn btn-secondary"
+        (click)="addSocialAccount()"
+      >
         Add Social Account
       </button>
     </div>
 
-    <button type="submit">Analyze</button>
+    <div class="actions">
+      <button type="submit" class="btn btn-primary" [disabled]="f.invalid">
+        Analyze
+      </button>
+    </div>
   </form>
 
   @if (errorMessage) {
-  <div class="error">
+  <div class="error" role="alert" aria-live="polite">
     {{ errorMessage }}
   </div>
   } @if (analysis) {
-  <div class="results">
-    <h3>Analysis Results:</h3>
-    <p><strong>The number of VOWELS:</strong> {{ analysis.vowelsCount }}</p>
-    <p>
-      <strong>The number of CONSONANTS:</strong> {{ analysis.consonantsCount }}
-    </p>
-    <p>
-      <strong>The firstname + last name entered:</strong>
-      {{ analysis.fullName }}
-    </p>
-    <p>
-      <strong>The reverse version of the firstname and lastname:</strong>
-      {{ analysis.reversedFullName }}
-    </p>
+  <section class="results card">
+    <h3>Analysis Results</h3>
+    <div class="kpi-grid">
+      <div class="kpi">
+        <span class="kpi-label">Vowels</span
+        ><span class="kpi-value">{{ analysis.vowelsCount }}</span>
+      </div>
+      <div class="kpi">
+        <span class="kpi-label">Consonants</span
+        ><span class="kpi-value">{{ analysis.consonantsCount }}</span>
+      </div>
+    </div>
+    <p><strong>Full name:</strong> {{ analysis.fullName }}</p>
+    <p><strong>Reversed full name:</strong> {{ analysis.reversedFullName }}</p>
 
-    <h4>The JSON format of the entire object:</h4>
-    <pre>{{ analysis.jsonFormat }}</pre>
-  </div>
+    <h4>Input JSON</h4>
+    <pre class="code-block">{{ analysis.jsonFormat }}</pre>
+  </section>
   }
 </div>
