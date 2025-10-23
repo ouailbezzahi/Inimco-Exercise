@@ -9,9 +9,9 @@ namespace backend.Repository
     {
         private readonly string _filePath;
 
-        public FileRepository()
+        public FileRepository(IWebHostEnvironment env)
         {
-            _filePath = Path.Combine("Inimco-Exercise\\backend\\people.json");
+            _filePath = Path.Combine(env.ContentRootPath, "people.json");
         }
 
         public void Save(Person person)

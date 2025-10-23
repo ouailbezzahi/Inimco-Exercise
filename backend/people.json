@@ -33,5 +33,18 @@
         "Address": "Chahid Bezzahi"
       }
     ]
+  },
+  {
+    "FirstName": "Ouail",
+    "LastName": "Bezzahi",
+    "SocialSkills": [
+      "voetbl"
+    ],
+    "SocialAccounts": [
+      {
+        "Type": "Instagram",
+        "Address": "ouailbezzahi"
+      }
+    ]
   }
 ]
