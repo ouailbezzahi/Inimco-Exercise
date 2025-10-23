@@ -46,7 +46,6 @@ person: IPerson = {
       return;
     }
 
-    // Filter out empty social skills
     this.person.socialSkills = this.person.socialSkills.filter(skill => skill.trim() !== '');
 
     this.personService.analyzePerson(this.person).subscribe({
