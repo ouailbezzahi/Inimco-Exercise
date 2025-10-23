@@ -82,5 +82,19 @@
         "Address": "gggg"
       }
     ]
+  },
+  {
+    "FirstName": "Ouail",
+    "LastName": "Bezzahi",
+    "SocialSkills": [
+      "voetbal",
+      "praten"
+    ],
+    "SocialAccounts": [
+      {
+        "Type": "Instagram",
+        "Address": "ouailbezzahi"
+      }
+    ]
   }
 ]

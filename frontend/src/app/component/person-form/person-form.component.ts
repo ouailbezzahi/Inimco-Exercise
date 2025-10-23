@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { JsonPipe } from '@angular/common';
 import { IPerson, IPersonAnalysis } from '../../../../types';
 import { PersonService } from '../../service/person.service';
 import { FormsModule } from '@angular/forms';
@@ -6,7 +7,7 @@ import { FormsModule } from '@angular/forms';
 @Component({
   selector: 'app-person-form',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule, JsonPipe],
   templateUrl: './person-form.component.html',
   styleUrl: './person-form.component.css'
 })

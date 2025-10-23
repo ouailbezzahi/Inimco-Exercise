@@ -16,5 +16,4 @@ export interface IPersonAnalysis {
   fullName: string;
   reversedFullName: string;
   person: IPerson;
-  jsonFormat: string;
 }
